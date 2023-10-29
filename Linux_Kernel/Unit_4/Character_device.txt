@@ -1,0 +1,2 @@
+- Học về template của một hệ thống hệ điều hành
+- công dụng: để có thể code kernel hay driver mà không cần quan tâm đến cấu trúc Hardware, là quy chuẩn chung để mọi dev code theo
