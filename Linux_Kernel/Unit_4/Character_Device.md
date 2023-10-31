@@ -6,4 +6,4 @@ công dụng: để có thể code kernel hay driver mà không cần quan tâm 
 Cây phân cấp Device Driver:
 https://elixir.bootlin.com/linux/v6.5.9/source/drivers
   Tại đường link trên, trong thử mục Source/drivers/, có rất nhiều cây thư mục con, mỗi thư mục sẽ chứa các driver của module khác nhau, trong mỗi module như vậy sẽ chứa config cho từng hãng.
- <img src = "https://imgur.com/VsT33zr">
+[Imgur](https://i.imgur.com/VsT33zr.png)
