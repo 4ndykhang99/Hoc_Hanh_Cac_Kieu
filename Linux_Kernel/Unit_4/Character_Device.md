@@ -28,7 +28,7 @@
 
 ***==> Trong lập trình Linux Driver, chúng ta có thể code được một driver cho một Device kế thừa các tính chất của Device tree thủy tổ.*** Trong đó Character device là loại phổ biến nhất, đơn giản nhất nhưng lại hiệu quả.
 ## 3. Template Driver
-- Định nghĩa: *Template Driver được ví như một form mẫu cho từng loại Device cụ thế. Về bản chất, template driver sẽ chứa các con trỏ hàm (API) mà hệ điều hành sẽ gọi ra khi thao tác với thiết bị. Nhiệm vụ của Dev là phải điền thông tin phần cứng theo đúng với template mà hệ điều hành quy định.*
+>Định nghĩa: *Template Driver được ví như một form mẫu cho từng loại Device cụ thế. Về bản chất, template driver sẽ chứa các con trỏ hàm (API) mà hệ điều hành sẽ gọi ra khi thao tác với thiết bị. Nhiệm vụ của Dev là phải điền thông tin phần cứng theo đúng với template mà hệ điều hành quy định.*
 
 VÍ DỤ VỀ TEMPLATE DRIVER THƯỜNG GẶP:
   ### a. Template Character
