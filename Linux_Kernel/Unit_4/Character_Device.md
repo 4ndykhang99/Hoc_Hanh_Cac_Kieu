@@ -20,9 +20,11 @@
   - Block Device: Dữ liệu được đọc theo từng Block, vd: Ổ cứng, CD-ROM => dữ liệu được đọc tối thiểu 512 byte hoặc 4096 byte.
   - Network Device:
 
-    - Dữ liệu được truyền ra bên ngoài.
-    - Dữ liệu được gán địa chỉ.
-    - Dữ liệu có thể bị mất mát hoặc sai lệch.
+    > Dữ liệu được truyền ra bên ngoài.
+    
+    > Dữ liệu được gán địa chỉ.
+    
+    > Dữ liệu có thể bị mất mát hoặc sai lệch.
 
 ***==> Trong lập trình Linux Driver, chúng ta có thể code được một driver cho một Device kế thừa các tính chất của Device tree thủy tổ.*** Trong đó Character device là loại phổ biến nhất, đơn giản nhất nhưng lại hiệu quả.
 ## 3. Template Driver
