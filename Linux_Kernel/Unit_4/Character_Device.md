@@ -1,11 +1,11 @@
 # DEVICE TREE
 ## 1. Mở đầu
 - Linux chạy trên nhiều Flatform và hỗ trợ nhiều loại Device.
-- Linux quản lý chúng dựa trên cây phân cấp device (Device tree).
+- Linux quản lý chúng dựa trên cây phân cấp device.
 
 ![image](https://github.com/4ndykhang99/Hoc_Hanh_Cac_Kieu/assets/78153591/32916477-9847-4124-bc04-3f7cff2feaab)
 
-=> Device tree là một một list Device chung để Dev có thể dựa vào đó cấu hình cho thiết bị của mình mà không cần quan tâm đến cấu trúc Hardware.
+=> là một một list Device chung để Dev có thể dựa vào đó cấu hình cho thiết bị của mình mà không cần quan tâm đến cấu trúc Hardware.
 
 - Để dễ hình dung hơn có thể vào [Linux_Device_tree](https://elixir.bootlin.com/linux/v6.5.9/source/drivers) để xem cây thư mục chứa các Drivers của từng module cho từng loại Device khác nhau.
 - Trong Drivers sẽ chưa các module chức năng của một thiết bị:
