@@ -30,7 +30,11 @@ Cấu trúc phần cứng của các thiết bị ngày càng phức tạp:
 - Device tree có các công dụng chính sau đây:
 
   - Mô tả phần cứng: Device Tree được sử dụng để mô tả cấu trúc và thông tin về phần cứng của một hệ thống nhúng. Nó bao gồm các thông tin về vi xử lý (CPU), bộ nhớ, bộ điều khiển, các giao diện như I2C, SPI, UART, các thiết bị ngoại vi và các thành phần phần cứng khác. Device Tree giúp hệ điều hành Linux hiểu và tương tác với các thiết bị phần cứng này mà không cần biết trước về chúng.
+
   - Độc lập phần cứng - phần mềm: Device Tree giúp tạo ra một giao diện trừu tượng giữa phần cứng và phần mềm. Nó cho phép phần mềm (như hạt nhân Linux) có thể được biên dịch và cấu hình trước, độc lập với phần cứng cụ thể. Điều này giúp tăng tính di động và khả năng tái sử dụng của phần mềm.
+
   - Hỗ trợ nhiều nền tảng: Device Tree cho phép việc chuyển đổi và hỗ trợ nhiều nền tảng phần cứng khác nhau mà không cần viết lại hoàn toàn mã nguồn của hạt nhân Linux. Thay vì phải thay đổi mã nguồn, chỉ cần cung cấp một Device Tree phù hợp cho từng nền tảng.
+
   - Điều chỉnh cấu hình phần cứng: Device Tree cung cấp một cách linh hoạt để điều chỉnh cấu hình phần cứng. Bằng cách chỉnh sửa hoặc thay đổi Device Tree, ta có thể thay đổi cấu hình phần cứng mà không cần sửa đổi mã nguồn của hạt nhân Linux.
+
   - Hỗ trợ khả năng cấu hình động: Device Tree cho phép khả năng cấu hình động trong quá trình chạy. Điều này cho phép thêm hoặc xóa các thiết bị phần cứng mà không cần khởi động lại hệ thống.
