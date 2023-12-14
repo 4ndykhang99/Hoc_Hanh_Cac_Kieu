@@ -31,7 +31,7 @@ Câu hỏi đặt ra: làm thế nào để máy tính có thể nhận biết �
 
 => Trong thiết kế của hệ điều hành Linux, có những thực thế rất trừu tượng như: User, Thread, process, CPU, MEMORY, NETWORK,...
 
-=> Những thực thể trựu tướng đó sẽ được hệ điều hành hiện thực hóa thông qua các tệp (file). DEV thông qua việc thao tác với file, có thể thống kê được tài nguyên sử dụng của một tiến trình, thậm chỉ có thể sửa đổi tiến trình đó.
+=> Những thực thể trựu tướng đó sẽ được hệ điều hành hiện thực hóa thông qua các Instance hoặc tệp (file). DEV thông qua việc thao tác với file, có thể thống kê được tài nguyên sử dụng của một tiến trình, thậm chỉ có thể sửa đổi tiến trình đó.
 
 Process trong Linux được định danh tại địa chỉ 
 
