@@ -55,7 +55,7 @@ Extra Activities : scopus article - badminton
 - willing to listen and learn 
 - persistent
 
-## 7. What do you expect anything from my company/ this position ?
+## 7. What do you expect anything from my company/ this position?
 - Training course in knowledge and skill 
 
 - A clear proficiency pathway
@@ -64,3 +64,77 @@ Extra Activities : scopus article - badminton
 
 ## 8. Question to ask them? 
 - Benefit
+
+
+# C PROGRAMMING AND EMBEDDED QUESTION
+## 1. Các kiểu dữ liệu của biến - size của từng kiểu dữ liệu ?
+- Kiểu int:
+kích thước 2 - 4 bytes tùy  người dùng khai báo
+định dạng %d, %i
+
+- Kiểu float và double:
+float: 4 bytes
+Double: 8 bytes
+Định dạng: %f, %lf
+
+- Kiểu Char:
+kích thước: 1 byte
+định dạng: %c
+
+- Short và Long:
+Short: 2 bytes
+Long: 4 đến 8 bytes
+
+- Bool:
+Kích thước: 1 byte
+
+## 2. Volatile, static, inline, extern.
+- Volatile:
+  - Định nghĩa: Volatile là một từ khóa được sử dụng để chỉ rằng biến có thể thay đổi bất kỳ lúc nào bởi các yếu tố bên ngoài (ví dụ: ngắt, thiết bị phần cứng).
+  - Ưu điểm:
+    -Đảm bảo rằng trạng thái của biến luôn được cập nhật chính xác.
+    -Hữu ích trong việc làm việc với các biến liên quan đến ngắt hoặc thiết bị ngoại vi.
+  -Nhược điểm:
+    -Có thể làm tăng độ phức tạp của mã nguồn.
+    -Không phù hợp cho tất cả các biến.
+- Static:
+  - Định nghĩa: Static là một từ khóa được sử dụng để chỉ rằng biến hoặc hàm chỉ có phạm vi trong cùng một tệp nguồn.
+  - Ưu điểm:
+    - Biến static không bị xung đột với các biến cùng tên trong các tệp nguồn khác.
+    - Hàm static không thể gọi từ bên ngoài tệp nguồn.
+  - Nhược điểm:
+    - Không thể truy cập từ các tệp nguồn khác.
+    - Có thể làm tăng kích thước của tệp thực thi.
+- Inline:
+  - Định nghĩa: Inline là một từ khóa được sử dụng để yêu cầu trình biên dịch thực hiện việc nhúng mã của hàm trực tiếp vào nơi gọi hàm.
+  - Ưu điểm:
+    - Tối ưu hóa hiệu suất bằng cách tránh gọi hàm.
+    - Giảm thời gian gọi hàm.
+  - Nhược điểm:
+    - Tăng kích thước của mã thực thi.
+    - Không phù hợp cho các hàm lớn hoặc phức tạp.
+- Extern:
+  - Định nghĩa: Extern là một từ khóa được sử dụng để khai báo biến hoặc hàm đã được định nghĩa ở nơi khác.
+  - Ưu điểm:
+    - Cho phép sử dụng biến hoặc hàm từ các tệp nguồn khác.
+    - Hữu ích trong việc chia sẻ mã nguồn giữa các tệp.
+  - Nhược điểm:
+    - Cần phải đảm bảo rằng biến hoặc hàm đã được định nghĩa ở nơi khác.
+    - Có thể gây xung đột tên biến hoặc hàm.
+## 3. Pointer
+> Con trỏ là một biến đặc biệt trong một số ngôn ngữ lập trình, thường được sử dụng để lưu trữ địa chỉ bộ nhớ của một biến khác. Con trỏ cho phép chúng ta truy cập và thay đổi giá trị của biến được trỏ tới thông qua việc tham chiếu đến địa chỉ bộ nhớ.
+
+- Con trỏ: Con trỏ là một biến chứa địa chỉ bộ nhớ của một biến khác.
+  - Để khai báo con trỏ, chúng ta sử dụng dấu * trước tên biến. Ví dụ: int* ptr;.
+  - Để lấy địa chỉ của một biến, chúng ta sử dụng toán tử &. Ví dụ:
+    ```int num = 10; int* ptr = &num;.```
+  - Để truy cập giá trị của biến được trỏ tới, chúng ta sử dụng toán tử * trước con trỏ. Ví dụ: int value = *ptr;.
+
+- Con trỏ hàm: Con trỏ hàm là một biến chứa địa chỉ của một hàm.
+  - Để khai báo con trỏ hàm, chúng ta sử dụng cú pháp tương tự như khai báo con trỏ, nhưng với kiểu dữ liệu là kiểu chữ ký của hàm. Ví dụ: int (*funcPtr)(int, int);.
+  - Để gán con trỏ hàm cho một hàm cụ thể, chúng ta chỉ cần sử dụng tên hàm. Ví dụ: funcPtr = sum;.
+  - Để gọi hàm thông qua con trỏ hàm, chúng ta sử dụng cú pháp tương tự như gọi hàm trực tiếp. Ví dụ: int result = (*funcPtr)(a, b); hoặc int result = funcPtr(a, b);.
+
+- Con trỏ hằng và hằng con trỏ:
+  - Con trỏ hằng (const pointer): Một con trỏ hằng không thể thay đổi địa chỉ mà nó trỏ tới. Ví dụ: int* const ptr = &num;.
+  - Hằng con trỏ (pointer to constant): Một hằng con trỏ không thể thay đổi giá trị của biến được trỏ tới. Ví dụ: const int* ptr = &num; hoặc int const* ptr = &num;.
