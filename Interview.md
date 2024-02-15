@@ -125,16 +125,102 @@ Kích thước: 1 byte
 > Con trỏ là một biến đặc biệt trong một số ngôn ngữ lập trình, thường được sử dụng để lưu trữ địa chỉ bộ nhớ của một biến khác. Con trỏ cho phép chúng ta truy cập và thay đổi giá trị của biến được trỏ tới thông qua việc tham chiếu đến địa chỉ bộ nhớ.
 
 - Con trỏ: Con trỏ là một biến chứa địa chỉ bộ nhớ của một biến khác.
-  - Để khai báo con trỏ, chúng ta sử dụng dấu * trước tên biến. Ví dụ: int* ptr;.
-  - Để lấy địa chỉ của một biến, chúng ta sử dụng toán tử &. Ví dụ:
-    ```int num = 10; int* ptr = &num;.```
-  - Để truy cập giá trị của biến được trỏ tới, chúng ta sử dụng toán tử * trước con trỏ. Ví dụ: int value = *ptr;.
+  - Để khai báo con trỏ, chúng ta sử dụng dấu ```*``` trước tên biến. Ví dụ:
+  
+    ```
+    int* ptr;
+    ```
+  - Để lấy địa chỉ của một biến, chúng ta sử dụng toán tử ```&```. Ví dụ:
+    
+    ```
+    int num = 10;
+    int* ptr = &num;
+    ```
+  - Để truy cập giá trị của biến được trỏ tới, chúng ta sử dụng toán tử ```*``` trước con trỏ. Ví dụ:
 
+    ```
+    int value = *ptr;
+    ```
 - Con trỏ hàm: Con trỏ hàm là một biến chứa địa chỉ của một hàm.
-  - Để khai báo con trỏ hàm, chúng ta sử dụng cú pháp tương tự như khai báo con trỏ, nhưng với kiểu dữ liệu là kiểu chữ ký của hàm. Ví dụ: int (*funcPtr)(int, int);.
-  - Để gán con trỏ hàm cho một hàm cụ thể, chúng ta chỉ cần sử dụng tên hàm. Ví dụ: funcPtr = sum;.
-  - Để gọi hàm thông qua con trỏ hàm, chúng ta sử dụng cú pháp tương tự như gọi hàm trực tiếp. Ví dụ: int result = (*funcPtr)(a, b); hoặc int result = funcPtr(a, b);.
+  - Để khai báo con trỏ hàm, chúng ta sử dụng cú pháp tương tự như khai báo con trỏ, nhưng với kiểu dữ liệu là kiểu chữ ký của hàm. Ví dụ:
 
+    ```
+    int (*funcPtr)(int, int);
+    ```
+  - Để gán con trỏ hàm cho một hàm cụ thể, chúng ta chỉ cần sử dụng tên hàm. Ví dụ:
+
+    ```
+    funcPtr = sum;
+    ```
+  - Để gọi hàm thông qua con trỏ hàm, chúng ta sử dụng cú pháp tương tự như gọi hàm trực tiếp. Ví dụ:
+
+    ```
+    int result = (*funcPtr)(a, b);
+    ``` 
+    or
+    
+    ```
+    int result = funcPtr(a, b);
+    ```
+  
 - Con trỏ hằng và hằng con trỏ:
-  - Con trỏ hằng (const pointer): Một con trỏ hằng không thể thay đổi địa chỉ mà nó trỏ tới. Ví dụ: int* const ptr = &num;.
-  - Hằng con trỏ (pointer to constant): Một hằng con trỏ không thể thay đổi giá trị của biến được trỏ tới. Ví dụ: const int* ptr = &num; hoặc int const* ptr = &num;.
+  - Con trỏ hằng (const pointer): Một con trỏ hằng không thể thay đổi địa chỉ mà nó trỏ tới. Ví dụ:
+
+    ```
+    int* const ptr = &num;
+    ```
+  - Hằng con trỏ (pointer to constant): Một hằng con trỏ không thể thay đổi giá trị của biến được trỏ tới. Ví dụ:
+
+    ```
+    const int* ptr = &num;
+    ```
+    or
+    ```
+    int const* ptr = &num;
+    ```
+## 4. Truyền tham trị, tham chiếu
+> Truyền tham trị (pass by value) và truyền tham chiếu (pass by reference) là hai phương pháp khác nhau để truyền thông tin vào một hàm trong ngôn ngữ lập trình. Dưới đây là mô tả chi tiết về cả hai phương pháp:
+
+- Truyền tham trị (Pass by Value):
+  - Khi truyền tham trị, một bản sao của giá trị được tạo ra và truyền vào hàm.
+  - Trong hàm, các thay đổi đối với tham số không ảnh hưởng đến giá trị ban đầu của biến gốc.
+  - Bản sao giá trị được sử dụng trong hàm và không có tác động đến biến gốc.
+  - Khi hàm kết thúc, bản sao giá trị bị hủy và giá trị ban đầu của biến gốc không bị thay đổi.
+  - Ví dụ về truyền tham trị trong C:
+ 
+    ```
+    void increment(int num) {
+        num++;
+    }
+    
+    int main() {
+        int x = 5;
+        increment(x);
+        // Giá trị của x không thay đổi vì truyền tham trị
+        // num trong hàm increment là một bản sao của x
+        // Thay đổi giá trị của num không ảnh hưởng đến x
+        return 0;
+    }
+    ```
+
+- Truyền tham chiếu (Pass by Reference):
+  - Khi truyền tham chiếu, địa chỉ của biến gốc được truyền vào hàm.
+  - Hàm có thể truy cập và thay đổi giá trị của biến gốc thông qua tham chiếu.
+  - Bất kỳ thay đổi nào đối với tham chiếu cũng ảnh hưởng đến giá trị của biến gốc.
+  - Truyền tham chiếu thường được sử dụng để truyền các đối tượng lớn hoặc để thay đổi giá trị của biến bên ngoài hàm.
+  - Ví dụ về truyền tham chiếu trong C:
+ 
+    ```
+    void increment(int& num) {
+        num++;
+    }
+    
+    int main() {
+        int x = 5;
+        increment(x);
+        // Giá trị của x tăng lên 1 vì truyền tham chiếu
+        // num trong hàm increment là một tham chiếu đến x
+        // Thay đổi giá trị của num ảnh hưởng đến x
+        return 0;
+    }
+    ```
