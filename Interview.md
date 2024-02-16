@@ -94,7 +94,7 @@ Kích thước: 1 byte
   - Ưu điểm:
     -Đảm bảo rằng trạng thái của biến luôn được cập nhật chính xác.
     -Hữu ích trong việc làm việc với các biến liên quan đến ngắt hoặc thiết bị ngoại vi.
-  -Nhược điểm:
+  - Nhược điểm:
     -Có thể làm tăng độ phức tạp của mã nguồn.
     -Không phù hợp cho tất cả các biến.
 - Static:
