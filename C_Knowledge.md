@@ -1,24 +1,24 @@
 # C PROGRAMMING AND EMBEDDED QUESTION
 ## 1. Các kiểu dữ liệu của biến - size của từng kiểu dữ liệu ?
 - Kiểu int:
-kích thước 2 - 4 bytes tùy  người dùng khai báo
-định dạng %d, %i
+  - kích thước 2 - 4 bytes tùy người dùng khai báo
+  - định dạng %d, %i
 
 - Kiểu float và double:
-float: 4 bytes
-Double: 8 bytes
-Định dạng: %f, %lf
+  - float: 4 bytes
+  - Double: 8 bytes
+  - Định dạng: %f, %lf
 
 - Kiểu Char:
-kích thước: 1 byte
-định dạng: %c
+  - kích thước: 1 byte
+  - định dạng: %c
 
 - Short và Long:
-Short: 2 bytes
-Long: 4 đến 8 bytes
+  - Short: 2 bytes
+  - Long: 4 đến 8 bytes
 
 - Bool:
-Kích thước: 1 byte
+  - Kích thước: 1 byte
 
 ## 2. Volatile, static, inline, extern.
 - Volatile:
