@@ -22,7 +22,9 @@
 
 ## 2. Volatile, static, inline, extern.
 - Volatile:
-  - Định nghĩa: Volatile là một từ khóa được sử dụng để chỉ rằng biến có thể thay đổi bất kỳ lúc nào bởi các yếu tố bên ngoài (ví dụ: ngắt, thiết bị phần cứng).
+
+  > Định nghĩa: Volatile là một từ khóa được sử dụng để chỉ rằng biến có thể thay đổi bất kỳ lúc nào bởi các yếu tố bên ngoài (ví dụ: ngắt, thiết bị phần cứng).
+  
   - Ưu điểm:
     -Đảm bảo rằng trạng thái của biến luôn được cập nhật chính xác.
     -Hữu ích trong việc làm việc với các biến liên quan đến ngắt hoặc thiết bị ngoại vi.
@@ -30,7 +32,9 @@
     -Có thể làm tăng độ phức tạp của mã nguồn.
     -Không phù hợp cho tất cả các biến.
 - Static:
-  - Định nghĩa: Static là một từ khóa được sử dụng để chỉ rằng biến hoặc hàm chỉ có phạm vi trong cùng một tệp nguồn.
+
+  > Định nghĩa: Static là một từ khóa được sử dụng để chỉ rằng biến hoặc hàm chỉ có phạm vi trong cùng một tệp nguồn.
+  
   - Ưu điểm:
     - Biến static không bị xung đột với các biến cùng tên trong các tệp nguồn khác.
     - Hàm static không thể gọi từ bên ngoài tệp nguồn.
@@ -38,7 +42,9 @@
     - Không thể truy cập từ các tệp nguồn khác.
     - Có thể làm tăng kích thước của tệp thực thi.
 - Inline:
-  - Định nghĩa: Inline là một từ khóa được sử dụng để yêu cầu trình biên dịch thực hiện việc nhúng mã của hàm trực tiếp vào nơi gọi hàm.
+  
+  > Định nghĩa: Inline là một từ khóa được sử dụng để yêu cầu trình biên dịch thực hiện việc nhúng mã của hàm trực tiếp vào nơi gọi hàm.
+  
   - Ưu điểm:
     - Tối ưu hóa hiệu suất bằng cách tránh gọi hàm.
     - Giảm thời gian gọi hàm.
@@ -46,7 +52,9 @@
     - Tăng kích thước của mã thực thi.
     - Không phù hợp cho các hàm lớn hoặc phức tạp.
 - Extern:
-  - Định nghĩa: Extern là một từ khóa được sử dụng để khai báo biến hoặc hàm đã được định nghĩa ở nơi khác.
+  
+  > Định nghĩa: Extern là một từ khóa được sử dụng để khai báo biến hoặc hàm đã được định nghĩa ở nơi khác.
+  
   - Ưu điểm:
     - Cho phép sử dụng biến hoặc hàm từ các tệp nguồn khác.
     - Hữu ích trong việc chia sẻ mã nguồn giữa các tệp.
