@@ -237,6 +237,12 @@ Các khái niệm struct, union và macro là những thành phần cơ bản tr
        return 0;
    }
    ```
+
+Union thường được dùng để tiết kiệm tài nguyên, khi mà chỉ một tài nguyên trong số các tài nguyên được khai báo được sử dụng tại một thời điểm:
+
+![image](https://github.com/4ndykhang99/Hoc_Hanh_Cac_Kieu/assets/78153591/6e8cd0d6-9741-498f-b16b-4191fdfaaacf)
+
+
 3. Macro:
    - Macro là một khái niệm trong ngôn ngữ lập trình cho phép định nghĩa và mở rộng mã nguồn trong quá trình biên dịch.
    - Macro được định nghĩa bằng cách sử dụng từ khóa `#define` hoặc các macro hỗ trợ khác.
