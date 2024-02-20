@@ -18,7 +18,9 @@ Extra Activities : scopus article - badminton
 ## 2. Strength - weakness
 ### a. Weakness
 - Weakness -> Improvement : detailed -> waste time -> after 2 machines, I improve almost
+- I realized that one of my weaknesses is time management. I often have a tendency to want to complete every task and project perfectly, and this can lead me to spend too much time on minor details.
 
+However, to overcome this weakness, I have developed some time management skills. For example, I have learned to prioritize tasks based on their importance and urgency. I use tools such as a schedule and to-do lists to help me track and manage my time more effectively.
 ### b. Strength
 
 - Strength: I have noticed three strong points in myself:
