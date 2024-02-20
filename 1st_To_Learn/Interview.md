@@ -28,11 +28,14 @@ Extra Activities : scopus article - badminton
 
 ## 3. Why did you quit your job?
 
-- Simply, My current job does not match my career path which I am applying for.
+- Simply, My current job does not match my career path anymore.
 
   -> I prefer the international, dynamic, and challenging environment like FPT 
 
-  -> To be honest, I do expect to win the position of Senior …., but it requires more qualifications than I do, so I decided to start with this position first with my willingness to learn and contribute. 
+  -> In my current job, I have to do many tasks which require skills in different fields, so i cannot focus on any field that meets my career path.
+
+  -> 
+
 
 ## 4. Long-term and short-term goals
 
@@ -48,7 +51,7 @@ Extra Activities : scopus article - badminton
 
 ## 5. Salary 
 
-- The average salary range for this position in such a professional company like yours  is from A to B. I am satisfied to dedicate all of the value and stable with any hesitation, I expect my salary at … 
+- The average salary range for this position in a professional company like yours  is from A to B. I am satisfied to dedicate all of the value and stable with any hesitation, I expect my salary at … 
 
 ## 6. Tell me the reason why I choose you.
 
